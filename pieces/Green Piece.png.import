@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4g6jq81jnxs2"
-path="res://.godot/imported/Yellow Adjacent.png-ee61041c4b396e9403993ebe4e5edcbe.ctex"
+uid="uid://bekfyqfmnd4ku"
+path="res://.godot/imported/Green Piece.png-5a9f50893fdcfd0def87c1ad89b6ef8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Yellow Adjacent.png"
-dest_files=["res://.godot/imported/Yellow Adjacent.png-ee61041c4b396e9403993ebe4e5edcbe.ctex"]
+source_file="res://pieces/Green Piece.png"
+dest_files=["res://.godot/imported/Green Piece.png-5a9f50893fdcfd0def87c1ad89b6ef8e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eanefjlnypyc"
-path="res://.godot/imported/Orange Adjacent.png-668b65091d83bb0917064d90acea1bde.ctex"
+uid="uid://dhru1m302wiug"
+path="res://.godot/imported/Blue Row.png-2f46eb9dc14fd48d81493c864e204731.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Orange Adjacent.png"
-dest_files=["res://.godot/imported/Orange Adjacent.png-668b65091d83bb0917064d90acea1bde.ctex"]
+source_file="res://pieces/Blue Row.png"
+dest_files=["res://.godot/imported/Blue Row.png-2f46eb9dc14fd48d81493c864e204731.ctex"]
 
 [params]
 

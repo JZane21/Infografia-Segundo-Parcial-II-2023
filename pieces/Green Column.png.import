@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnq84xajqjj6m"
-path="res://.godot/imported/Pink Piece 3.png-bcb57210dfa3d42da815d490e4ecab96.ctex"
+uid="uid://dcbf0tvsn26nt"
+path="res://.godot/imported/Green Column.png-7c578a130fb532d311d896d1160ec747.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Pink Piece 3.png"
-dest_files=["res://.godot/imported/Pink Piece 3.png-bcb57210dfa3d42da815d490e4ecab96.ctex"]
+source_file="res://pieces/Green Column.png"
+dest_files=["res://.godot/imported/Green Column.png-7c578a130fb532d311d896d1160ec747.ctex"]
 
 [params]
 

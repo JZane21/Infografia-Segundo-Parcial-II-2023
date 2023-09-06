@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkjxr73f4g1t8"
-path="res://.godot/imported/Light Green Piece.png-b6901ad3cb9e28f83c5b5ba705e4164d.ctex"
+uid="uid://tqjdkn3v0yiu"
+path="res://.godot/imported/Pink Adjacent.png-fb2597a6eda574ae3271ce261813042f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Light Green Piece.png"
-dest_files=["res://.godot/imported/Light Green Piece.png-b6901ad3cb9e28f83c5b5ba705e4164d.ctex"]
+source_file="res://pieces/Pink Adjacent.png"
+dest_files=["res://.godot/imported/Pink Adjacent.png-fb2597a6eda574ae3271ce261813042f.ctex"]
 
 [params]
 

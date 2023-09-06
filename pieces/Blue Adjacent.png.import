@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4sijnbjp06m5"
-path="res://.godot/imported/Green Row.png-b4820c10d31cafa8f4265c653d8d3905.ctex"
+uid="uid://d1bhv6fqx04ed"
+path="res://.godot/imported/Blue Adjacent.png-558bb86058c2896261b6a44a3cf8ae1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Green Row.png"
-dest_files=["res://.godot/imported/Green Row.png-b4820c10d31cafa8f4265c653d8d3905.ctex"]
+source_file="res://pieces/Blue Adjacent.png"
+dest_files=["res://.godot/imported/Blue Adjacent.png-558bb86058c2896261b6a44a3cf8ae1a.ctex"]
 
 [params]
 

@@ -12,6 +12,15 @@ var state
 @export var offset: int
 @export var y_offset: int
 
+@export var global_score: int = 0
+var multi_score:int = 1
+signal increase_points(value:int)
+signal reduce_attemps
+
+var end_game:bool = false
+var game_over_mode:bool = false
+var winner_of_game:bool = false
+
 # piece array
 var possible_pieces = [
 	preload("res://scenes/blue_piece.tscn"),
@@ -36,11 +45,7 @@ var first_touch = Vector2.ZERO
 var final_touch = Vector2.ZERO
 var is_controlling = false
 
-# scoring variables and signals
-
-
-# counter variables and signals
-
+signal can_change_game_mode(value:bool)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -48,6 +53,8 @@ func _ready():
 	randomize()
 	all_pieces = make_2d_array()
 	spawn_pieces()
+	if game_over_mode:
+		emit_signal("reduce_attemps")
 
 func make_2d_array():
 	var array = []
@@ -128,6 +135,8 @@ func swap_pieces(column, row, direction: Vector2):
 	#other_piece.position = grid_to_pixel(column, row)
 	first_piece.move(grid_to_pixel(column + direction.x, row + direction.y))
 	other_piece.move(grid_to_pixel(column, row))
+	#emit_signal("reduce_attemps",global_attemps)
+	print("moviendo pieza")
 	if not move_checked:
 		find_matches()
 
@@ -160,6 +169,10 @@ func touch_difference(grid_1, grid_2):
 func _process(delta):
 	if state == MOVE:
 		touch_input()
+	if (end_game or winner_of_game) and state != WAIT:
+		game_over()
+		var text_game_over:String = "YOU WIN!" if winner_of_game else "YOU LOSE!"
+		print(text_game_over)
 
 func find_matches():
 	for i in width:
@@ -196,7 +209,7 @@ func find_matches():
 					all_pieces[i][j + 1].dim()
 					
 	get_parent().get_node("destroy_timer").start()
-	
+
 func destroy_matched():
 	var was_matched = false
 	for i in width:
@@ -205,9 +218,11 @@ func destroy_matched():
 				was_matched = true
 				all_pieces[i][j].queue_free()
 				all_pieces[i][j] = null
-				
+				global_score += 10
 	move_checked = true
 	if was_matched:
+		emit_signal("increase_points",global_score*multi_score)
+		global_score = 0
 		get_parent().get_node("collapse_timer").start()
 	else:
 		swap_back()
@@ -227,7 +242,8 @@ func collapse_columns():
 	get_parent().get_node("refill_timer").start()
 
 func refill_columns():
-	
+	if multi_score < 3:
+		multi_score += 1
 	for i in width:
 		for j in height:
 			if all_pieces[i][j] == null:
@@ -257,8 +273,10 @@ func check_after_refill():
 				find_matches()
 				get_parent().get_node("destroy_timer").start()
 				return
+	multi_score = 1
+	emit_signal("reduce_attemps")
+	emit_signal("can_change_game_mode",true)
 	state = MOVE
-	
 	move_checked = false
 
 func _on_destroy_timer_timeout():
@@ -267,11 +285,21 @@ func _on_destroy_timer_timeout():
 
 func _on_collapse_timer_timeout():
 	print("collapse")
+	emit_signal("can_change_game_mode",false)
 	collapse_columns()
 
 func _on_refill_timer_timeout():
+	print("reffill")
 	refill_columns()
 	
 func game_over():
 	state = WAIT
-	print("game over")
+
+func _on_top_ui_send_end_game_mode(game_mode):
+	game_over_mode = game_mode
+
+func _on_top_ui_finish_game(end_of_game):
+	end_game = end_of_game
+
+func _on_top_ui_win_game(win):
+	winner_of_game = win

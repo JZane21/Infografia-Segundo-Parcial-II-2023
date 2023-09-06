@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkhvdwkx6q4i5"
-path="res://.godot/imported/Pink Row.png-d2b9af8909b66e4fed15eb1874e6848c.ctex"
+uid="uid://dhnat5rakkcof"
+path="res://.godot/imported/Orange Piece.png-0a60828e027277c4154e77b72ad52170.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Pink Row.png"
-dest_files=["res://.godot/imported/Pink Row.png-d2b9af8909b66e4fed15eb1874e6848c.ctex"]
+source_file="res://pieces/Orange Piece.png"
+dest_files=["res://.godot/imported/Orange Piece.png-0a60828e027277c4154e77b72ad52170.ctex"]
 
 [params]
 

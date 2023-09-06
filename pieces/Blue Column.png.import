@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce47mf6vf03ew"
-path="res://.godot/imported/Light Green Column.png-a209a3f584eaa30e9ed60d05cb8e2553.ctex"
+uid="uid://c55dixxx362lf"
+path="res://.godot/imported/Blue Column.png-11e96c51e00265d9adb04de9720efc2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Light Green Column.png"
-dest_files=["res://.godot/imported/Light Green Column.png-a209a3f584eaa30e9ed60d05cb8e2553.ctex"]
+source_file="res://pieces/Blue Column.png"
+dest_files=["res://.godot/imported/Blue Column.png-11e96c51e00265d9adb04de9720efc2a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb0xx0yg2qgom"
-path="res://.godot/imported/Light Green Row.png-fec4c1823f0637f567bf71c5d9fe0684.ctex"
+uid="uid://c4g6jq81jnxs2"
+path="res://.godot/imported/Yellow Adjacent.png-e14d579d42d4010601c103673107bd04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Light Green Row.png"
-dest_files=["res://.godot/imported/Light Green Row.png-fec4c1823f0637f567bf71c5d9fe0684.ctex"]
+source_file="res://pieces/Yellow Adjacent.png"
+dest_files=["res://.godot/imported/Yellow Adjacent.png-e14d579d42d4010601c103673107bd04.ctex"]
 
 [params]
 

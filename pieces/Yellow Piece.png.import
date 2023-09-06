@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh1lbcdhhkva1"
-path="res://.godot/imported/Orange Column.png-78852bca33856c0194bf7809fd44d9b1.ctex"
+uid="uid://f5kuy0p0cwye"
+path="res://.godot/imported/Yellow Piece.png-37a5eb16c471762795a86619cbe60d06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pieces/Orange Column.png"
-dest_files=["res://.godot/imported/Orange Column.png-78852bca33856c0194bf7809fd44d9b1.ctex"]
+source_file="res://pieces/Yellow Piece.png"
+dest_files=["res://.godot/imported/Yellow Piece.png-37a5eb16c471762795a86619cbe60d06.ctex"]
 
 [params]
 
