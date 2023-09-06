@@ -1,0 +1,1 @@
+# Infografia-Segundo-Parcial-II-2023
